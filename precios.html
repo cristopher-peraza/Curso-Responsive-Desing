@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Precios</title>
+    <link rel="stylesheet" href="css/invie.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet"><!-- Tipografias -->
+  </head>
+  <body>
+    <header id="header" class="header background"> <!-- header -->
+      <div class="contenedor">
+        <figure class="logotipo"><!-- logotipo -->
+          <img src="images/invie.png" width="186" height="60" alt="Invie Logotipo">
+        </figure>
+        <nav class="menu"><!-- menu -->
+           <ul><!-- lista desordenada -->
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html#guitarras">Guitarras</a></li><!-- Utilizamos #id de guitarras, para hacer una navegacion interna.-->
+            <li><a href="precios.html">precios</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+    <section class="tabla">
+      <div class="contenedor">
+      <table>
+        <thead><!-- Titulos -->
+          <tr>
+            <th>Modelo</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Invie Classic</td>
+              <td>$1000000</td>
+              <td>Super guitarra</td>
+            </tr>
+            <tr>
+              <td>Invie Classic</td>
+              <td>$1000000</td>
+              <td>Super guitarra</td>
+            </tr>
+            <tr>
+              <td>Invie Classic</td>
+              <td>$1000000</td>
+              <td>Super guitarra</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="images/invie-white.png" alt="Logotipo invie">
+          <a href="tel:+5747678353"><strong>Telefono</strong><span>17812693612</span></a>
+          <!-- con href="tel:+5747678353, uestro sistema lo detectara para realizar llamadas-->
+          <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+          <!-- con href="mailto:contacto@invie.com, uestro sistema lo detectara para enviar correo-->
+        </div>
+        <form class="formulario">
+          <div class="col1">
+            <label for="nombre">Nombre</label><!-- for= le da experiencia a la hora de dar clic  -->
+            <input type="text" required id="nombre" name="nombre"/>
+            <label for="email">E-mail</label>
+            <input type="email" required id="email" name="email"/>
+            <div class="sexo">
+              <label for="mujer">
+                <input type="radio" checked id="mujer" name="sexo" value="mujer">mujer<!-- name= nos permite seleccionar u hombre o mujer, solo uno -->
+               </label>        <!-- checked, permite dejar marcado por defecto un checkbox -->
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" value="hombre">hombre
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotizacion
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+              </label>
+              <label for="otro">
+                <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+              </label>
+            </div>
+          </div>
+          <div class="col2">
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" rows="7" cols="30" id="comentarios "></textarea>
+            <input type="submit" value="Enviar" class="button">
+          </div>
+        </form>
+      </footer>
+
+  </body>
+
+  </html>

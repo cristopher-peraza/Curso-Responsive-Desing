@@ -1,0 +1,315 @@
+/*Pagina para deradado de bottones,
+colorizilla.com*/
+
+/* Tipografias
+font-family: 'Montserrat', sans-serif;
+font-family: 'Allerta', sans-serif; */
+
+/* * {
+  padding: 10px;//Margen interno
+  Usos del padding:
+  padding-top: 10px ;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+  margin: 10px;//Margen Externo//
+   Usos del margin:
+  margin-top: 10px ;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  border: 2px solid red;//Tamaño, tipo, color
+} */
+.background {/*Clase utilitaria*/
+  background-image: url('../images/background.png');   /*El doble punto se utiliza para salir una carpeta. */
+  background-size:cover;/*Permite a la imagen tomar toda la distribucion.*/
+}
+.contenedor {
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+body {
+  /* fuentes pendientes  */
+  margin: 0;/*Para que mi pagina completa no tenga bordes*/
+}
+
+.header {
+  position: relative;
+}
+
+.logotipo {
+  display: inline-block;
+  margin-left: 0;
+}
+
+.menu {
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.menu li {
+   display: inline-block;/*Los elementos del menu, se ponen uno a lado del otro*/
+}
+
+.menu li:before {/*Pseudoelemento, * de lado izquierdo de los enlaces*/
+  content: '*';
+  font-size: 20px;
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;/*Para quitar subrallado de links*/
+}
+
+.portada {
+
+color: white;/*Todos los textos dentro de la clase .portada, eredaran este color.*/
+padding: 20px;/*Margen Interno*/
+font-family: 'Allerta', sans-serif;
+height: 500px;/*Tamaño de la imagen*/
+}
+
+.button {
+  border-radius: 12px;/*Redodndeado del boton*/
+  border: none;/*Sin borde*/
+  background: #fd324e;/*Color boton*/
+  color: white;/*letras*/
+  padding: 7px 12px;/*Margen interior*/
+  cursor: pointer;/*Puntero cambia al pasarlo por el boton.*/
+  text-decoration: none;/*Quitar subrallado al enlace.*/
+  font-size: 18px;
+  background: linear-gradient(to left,#fe344e, #ff7250);/*Degradado de izquierda a derecha*/
+}
+
+.titulo {
+  /* fuentes pendientes  */
+  font-size: 70px;
+  margin-bottom: 15px;
+  margin-top: 70px;
+  line-height: 40px;
+}
+
+.titulo span {
+  text-decoration: underline;/*para subrallar invie.*/
+}
+
+.title-a {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.title-b {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.guitarras {
+  color: #1F313C; /*Todos los textos dentro de la clase .guitarras, eredaran este color.*/
+  font-family: 'Allerta', sans-serif;
+  margin-bottom: 60px !important;/*Marguen Inferior*/
+}
+
+.guitarras h2 {
+  font-size: 35px;/*Solo el elemento h2 dentro de guitarra, eredara esta propiedad.*/
+}
+
+.guitarra {
+  margin: 10px 10px 30px 10px;
+  padding: 10px;
+  border: 1px solid #1F313C;
+  border-radius: 8px;/* redondear bordes de margenes */
+}
+
+.guitarra ol {
+  padding: 0;
+}
+
+.guitarra.b {
+    height: 190px;/*Alto*/
+
+
+}
+
+.derecha {
+  float: right;
+  position: relative;
+  top: -127px;
+}
+
+.izquierda{
+  float: left;
+  position: relative;
+
+}
+
+.contenedor-guitarra-a {
+
+  padding-left: 20px;
+}
+
+.contenedor-guitarra-b {
+  margin-left: 370px;
+  position: relative;
+  bottom: 90px;
+}
+
+.footer {
+  background: #273b47;
+  padding: 50px 10px;
+  font-family: 'Allerta', sans-serif;
+}
+
+.contacto {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contacto img {
+  display: block; /*Los elementos despues de la imagen se pondran de bajo de ella*/
+}
+
+.contacto strong {
+  display: block;
+}
+
+.contacto a {
+  color: white;
+  margin: 10px 10px 10px 0;
+  height: 200px;
+}
+
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario {
+  display: flex;
+  width: 400px;
+  color: white;
+
+
+}
+
+.col1 , .col2 {/*la coma es para poner las mismas propiedades a esas os columnas*/
+  display: flex;
+  flex-direction: column;
+
+}
+
+.col1 {
+  margin-right: 15px;
+  }
+
+.col2 {
+  align-items: flex-start;
+}
+
+.col2 .button {
+  margin-top: 15px;
+}
+
+  .intereses label {
+    font-size: 12px;
+  }
+
+  .formulario label, .sexo, .intereses {
+    margin-bottom: 10px;
+  }
+
+  .sexo{
+    margin-top: 10px;
+  }
+
+  table {
+    width: 100%;/*Ancho */
+
+  }
+
+  th {
+    background: #273b47;/*Color para el fondo de los titulos.*/
+    color: white;
+  }
+
+  th {
+    padding: 10px 20px;
+    text-align: left;
+  }
+
+  td {
+    padding: 20px;
+  }
+
+  table, td, th { /*Bordes para la tabla*/
+    border: 1px solid  #273b47;
+    border-collapse: collapse; /*para dejar una unica division.*/
+  }
+
+  input, textarea {
+    outline: 0;
+  }
+
+  input:focus, textarea:focus { /*Seudo clases, para dar color dentro de casillas de nombre y emailtext-decoration: none*/
+    background: lightgray;
+  }
+
+  .tabla {
+    margin: 50px 0;
+  }
+
+  @media screen and (max-width: 800px) {
+    /* .contenedor {
+      width: auto;
+      max-width: 800px; */
+      .titulo {
+        font-size: 45px;
+        margin-top: 30px;
+      }
+      .title-a {
+        font-size: 18px;
+      }
+      .title-b {
+        margin: 0;
+      }
+      /* portada */
+      .portada {
+        height: auto;
+      }
+      .portada .button {
+        margin-bottom: 30px;
+        display: inline-block;
+      }
+
+      /* guitarras */
+      .guitarras {
+        text-align: center;
+      }
+      .izquierda, .derecha {
+        float: none; /* reseteamos los float utilizados arriba, para cuando llegue a los 800px, se eliminen. */
+         position: static; /*reseteamos el position. */
+      }
+
+      .guitarra li {
+         list-style: none; /*para quitar numeracionde los li */
+      }
+      .guitarra.b {
+        height: auto;
+      }
+      .contenedor-guitarra-b {
+        position: static;
+        margin: 0;
+      }
+
+      sique cap 7
+
+    }
+  }
